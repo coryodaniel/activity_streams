@@ -1,0 +1,14 @@
+{
+  "type": "Delete",
+  "summary": "Sally deleted a note",
+  "origin": {
+    "type": "Collection",
+    "name": "Sally's Notes"
+  },
+  "object": "http://example.org/notes/1",
+  "actor": {
+    "type": "Person",
+    "name": "Sally"
+  },
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

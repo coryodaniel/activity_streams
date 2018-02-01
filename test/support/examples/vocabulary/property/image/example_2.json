@@ -1,0 +1,18 @@
+{
+  "type": "Note",
+  "name": "A simple note",
+  "image": [
+    {
+      "url": "http://example.org/cat1.png",
+      "type": "Image",
+      "name": "Cat 1"
+    },
+    {
+      "url": "http://example.org/cat2.png",
+      "type": "Image",
+      "name": "Cat 2"
+    }
+  ],
+  "content": "This is all there is.",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

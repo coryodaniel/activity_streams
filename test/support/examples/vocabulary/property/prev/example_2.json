@@ -1,0 +1,15 @@
+{
+  "type": "CollectionPage",
+  "summary": "Page 1 of Sally's blog posts",
+  "prev": {
+    "type": "Link",
+    "name": "Previous Page",
+    "href": "http://example.org/collection?page=1"
+  },
+  "items": [
+    "http://example.org/posts/1",
+    "http://example.org/posts/2",
+    "http://example.org/posts/3"
+  ],
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

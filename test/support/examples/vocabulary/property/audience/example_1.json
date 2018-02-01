@@ -1,0 +1,10 @@
+{
+  "type": "Note",
+  "name": "Holiday announcement",
+  "content": "Thursday will be a company-wide holiday. Enjoy your day off!",
+  "audience": {
+    "type": "http://example.org/Organization",
+    "name": "ExampleCo LLC"
+  },
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

@@ -1,0 +1,17 @@
+{
+  "type": "Travel",
+  "target": {
+    "type": "Place",
+    "name": "Home"
+  },
+  "summary": "Sally went home from work",
+  "origin": {
+    "type": "Place",
+    "name": "Work"
+  },
+  "actor": {
+    "type": "Person",
+    "name": "Sally"
+  },
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

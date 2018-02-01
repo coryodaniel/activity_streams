@@ -1,0 +1,10 @@
+{
+  "type": "Read",
+  "summary": "Sally read a blog post",
+  "object": "http://example.org/posts/1",
+  "actor": {
+    "type": "Person",
+    "name": "Sally"
+  },
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

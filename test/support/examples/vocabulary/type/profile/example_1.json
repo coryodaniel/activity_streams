@@ -1,0 +1,9 @@
+{
+  "type": "Profile",
+  "summary": "Sally's Profile",
+  "describes": {
+    "type": "Person",
+    "name": "Sally Smith"
+  },
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

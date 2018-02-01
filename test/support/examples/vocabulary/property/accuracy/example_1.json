@@ -1,0 +1,8 @@
+{
+  "type": "Place",
+  "name": "Liu Gu Lu Cun, Pingdu, Qingdao, Shandong, China",
+  "longitude": 119.7667,
+  "latitude": 36.75,
+  "accuracy": 94.5,
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

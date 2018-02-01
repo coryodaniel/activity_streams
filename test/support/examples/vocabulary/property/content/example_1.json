@@ -1,0 +1,6 @@
+{
+  "type": "Note",
+  "summary": "A simple note",
+  "content": "A <em>simple</em> note",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

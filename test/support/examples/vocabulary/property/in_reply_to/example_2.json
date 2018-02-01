@@ -1,0 +1,7 @@
+{
+  "type": "Note",
+  "summary": "A simple note",
+  "inReplyTo": "http://example.org/posts/1",
+  "content": "This is all there is.",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

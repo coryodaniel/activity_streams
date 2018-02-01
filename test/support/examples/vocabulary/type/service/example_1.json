@@ -1,0 +1,5 @@
+{
+  "type": "Service",
+  "name": "Acme Web Service",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

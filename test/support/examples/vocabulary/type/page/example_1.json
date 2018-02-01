@@ -1,0 +1,6 @@
+{
+  "url": "http://example.org/weather-in-omaha.html",
+  "type": "Page",
+  "name": "Omaha Weather Report",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

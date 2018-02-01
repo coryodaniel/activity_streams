@@ -1,0 +1,16 @@
+{
+  "type": "Collection",
+  "totalItems": 2,
+  "summary": "Sally's notes",
+  "items": [
+    {
+      "type": "Note",
+      "name": "Which Staircase Should I Use"
+    },
+    {
+      "type": "Note",
+      "name": "Something to Remember"
+    }
+  ],
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

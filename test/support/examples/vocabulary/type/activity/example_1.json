@@ -1,0 +1,13 @@
+{
+  "type": "Activity",
+  "summary": "Sally did something to a note",
+  "object": {
+    "type": "Note",
+    "name": "A Note"
+  },
+  "actor": {
+    "type": "Person",
+    "name": "Sally"
+  },
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "Offer",
+  "target": "http://john.example.org",
+  "summary": "Sally offered the post to John",
+  "object": "http://example.org/posts/1",
+  "actor": "http://sally.example.org",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

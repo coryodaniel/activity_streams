@@ -1,0 +1,13 @@
+{
+  "type": "Leave",
+  "summary": "Sally left work",
+  "object": {
+    "type": "Place",
+    "name": "Work"
+  },
+  "actor": {
+    "type": "Person",
+    "name": "Sally"
+  },
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

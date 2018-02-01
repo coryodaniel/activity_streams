@@ -1,0 +1,10 @@
+{
+  "type": "Note",
+  "summary": "A simple note",
+  "contentMap": {
+    "zh-Hans": "ä¸æ®µ<em>ç®åç</em>ç¬è®°",
+    "es": "Una nota <em>sencilla</em>",
+    "en": "A <em>simple</em> note"
+  },
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

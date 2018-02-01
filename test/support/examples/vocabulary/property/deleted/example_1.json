@@ -1,0 +1,6 @@
+{
+  "type": "Tombstone",
+  "summary": "This image has been deleted",
+  "deleted": "2016-05-03T00:00:00Z",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

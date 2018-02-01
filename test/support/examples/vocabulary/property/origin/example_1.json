@@ -1,0 +1,15 @@
+{
+  "type": "Move",
+  "target": {
+    "type": "Collection",
+    "name": "List B"
+  },
+  "summary": "Sally moved a post from List A to List B",
+  "origin": {
+    "type": "Collection",
+    "name": "List A"
+  },
+  "object": "http://example.org/posts/1",
+  "actor": "http://sally.example.org",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

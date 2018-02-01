@@ -1,0 +1,10 @@
+{
+  "url": {
+    "type": "Link",
+    "mediaType": "audio/mp3",
+    "href": "http://example.org/podcast.mp3"
+  },
+  "type": "Audio",
+  "name": "Interview With A Famous Technologist",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

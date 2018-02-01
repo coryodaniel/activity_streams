@@ -1,0 +1,13 @@
+{
+  "url": "http://example.org/sally.jpg",
+  "type": "Image",
+  "tag": [
+    {
+      "type": "Person",
+      "name": "Sally",
+      "id": "http://sally.example.org"
+    }
+  ],
+  "summary": "Picture of Sally",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

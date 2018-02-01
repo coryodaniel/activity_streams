@@ -1,0 +1,17 @@
+{
+  "url": [
+    {
+      "type": "Link",
+      "mediaType": "image/jpeg",
+      "href": "http://example.org/image.jpeg"
+    },
+    {
+      "type": "Link",
+      "mediaType": "image/png",
+      "href": "http://example.org/image.png"
+    }
+  ],
+  "type": "Image",
+  "name": "Cat Jumping on Wagon",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

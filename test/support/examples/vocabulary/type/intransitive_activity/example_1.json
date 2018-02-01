@@ -1,0 +1,13 @@
+{
+  "type": "Travel",
+  "target": {
+    "type": "Place",
+    "name": "Work"
+  },
+  "summary": "Sally went to work",
+  "actor": {
+    "type": "Person",
+    "name": "Sally"
+  },
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

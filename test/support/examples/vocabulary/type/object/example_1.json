@@ -1,0 +1,6 @@
+{
+  "type": "Object",
+  "name": "A Simple, non-specific object",
+  "id": "http://www.test.example/object/1",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

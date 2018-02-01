@@ -1,0 +1,7 @@
+{
+  "type": "Like",
+  "summary": "Sally liked a post",
+  "object": "http://example.org/posts/1",
+  "actor": "http://sally.example.org",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

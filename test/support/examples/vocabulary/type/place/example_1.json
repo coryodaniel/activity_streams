@@ -1,0 +1,5 @@
+{
+  "type": "Place",
+  "name": "Work",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

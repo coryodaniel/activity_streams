@@ -1,0 +1,10 @@
+{
+  "type": "Note",
+  "summary": "A simple note",
+  "generator": {
+    "type": "Application",
+    "name": "Exampletron 3000"
+  },
+  "content": "This is all there is.",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "Follow",
+  "summary": "Sally followed John",
+  "object": {
+    "type": "Person",
+    "name": "John"
+  },
+  "actor": {
+    "type": "Person",
+    "name": "Sally"
+  },
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

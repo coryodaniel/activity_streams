@@ -1,0 +1,11 @@
+{
+  "type": "Note",
+  "name": "A simple note",
+  "image": {
+    "url": "http://example.org/cat.png",
+    "type": "Image",
+    "name": "A Cat"
+  },
+  "content": "This is all there is.",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

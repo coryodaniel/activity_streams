@@ -1,0 +1,14 @@
+{
+  "type": [
+    "Activity",
+    "http://www.verbs.example/Check"
+  ],
+  "summary": "Sally checked that her flight was on time",
+  "result": {
+    "type": "http://www.types.example/flightstatus",
+    "name": "On Time"
+  },
+  "object": "http://example.org/flights/1",
+  "actor": "http://sally.example.org",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

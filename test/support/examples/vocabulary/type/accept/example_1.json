@@ -1,0 +1,17 @@
+{
+  "type": "Accept",
+  "summary": "Sally accepted an invitation to a party",
+  "object": {
+    "type": "Invite",
+    "object": {
+      "type": "Event",
+      "name": "Going-Away Party for Jim"
+    },
+    "actor": "http://john.example.org"
+  },
+  "actor": {
+    "type": "Person",
+    "name": "Sally"
+  },
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

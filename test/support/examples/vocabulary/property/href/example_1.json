@@ -1,0 +1,7 @@
+{
+  "type": "Link",
+  "name": "Previous",
+  "mediaType": "text/html",
+  "href": "http://example.org/abc",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

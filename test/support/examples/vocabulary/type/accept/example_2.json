@@ -1,0 +1,17 @@
+{
+  "type": "Accept",
+  "target": {
+    "type": "Group",
+    "name": "The Club"
+  },
+  "summary": "Sally accepted Joe into the club",
+  "object": {
+    "type": "Person",
+    "name": "Joe"
+  },
+  "actor": {
+    "type": "Person",
+    "name": "Sally"
+  },
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

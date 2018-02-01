@@ -1,0 +1,12 @@
+{
+  "type": "Link",
+  "rel": [
+    "canonical",
+    "preview"
+  ],
+  "name": "Preview",
+  "mediaType": "text/html",
+  "hreflang": "en",
+  "href": "http://example.org/abc",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

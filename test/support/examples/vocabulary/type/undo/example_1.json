@@ -1,0 +1,12 @@
+{
+  "type": "Undo",
+  "summary": "Sally retracted her offer to John",
+  "object": {
+    "type": "Offer",
+    "target": "http://john.example.org",
+    "object": "http://example.org/posts/1",
+    "actor": "http://sally.example.org"
+  },
+  "actor": "http://sally.example.org",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

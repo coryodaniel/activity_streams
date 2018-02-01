@@ -1,0 +1,13 @@
+{
+  "type": "Person",
+  "name": "Sally",
+  "location": {
+    "units": "m",
+    "type": "Place",
+    "name": "Over the Arabian Sea, east of Socotra Island Nature Sanctuary",
+    "longitude": 12.34,
+    "latitude": 56.78,
+    "altitude": 90
+  },
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

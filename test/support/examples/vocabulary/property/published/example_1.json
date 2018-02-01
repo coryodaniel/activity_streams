@@ -1,0 +1,7 @@
+{
+  "type": "Note",
+  "summary": "A simple note",
+  "published": "2014-12-12T12:12:12Z",
+  "content": "Fish swim.",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

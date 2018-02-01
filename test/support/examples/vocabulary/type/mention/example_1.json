@@ -1,0 +1,7 @@
+{
+  "type": "Mention",
+  "summary": "Mention of Joe by Carrie in her note",
+  "name": "Joe",
+  "href": "http://example.org/joe",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

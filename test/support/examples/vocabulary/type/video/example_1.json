@@ -1,0 +1,7 @@
+{
+  "url": "http://example.org/video.mkv",
+  "type": "Video",
+  "name": "Puppy Plays With Ball",
+  "duration": "PT2H",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

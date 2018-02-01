@@ -1,0 +1,11 @@
+{
+  "type": "Offer",
+  "summary": "Sally offered the Foo object",
+  "object": "http://example.org/foo",
+  "actor": {
+    "type": "Person",
+    "summary": "Sally",
+    "id": "http://sally.example.org"
+  },
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

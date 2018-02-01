@@ -1,0 +1,14 @@
+{
+  "type": "Remove",
+  "target": {
+    "type": "Collection",
+    "name": "Notes Folder"
+  },
+  "summary": "Sally removed a note from her notes folder",
+  "object": "http://example.org/notes/1",
+  "actor": {
+    "type": "Person",
+    "name": "Sally"
+  },
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

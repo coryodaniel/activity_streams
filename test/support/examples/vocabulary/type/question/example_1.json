@@ -1,0 +1,15 @@
+{
+  "type": "Question",
+  "oneOf": [
+    {
+      "type": "Note",
+      "name": "Option A"
+    },
+    {
+      "type": "Note",
+      "name": "Option B"
+    }
+  ],
+  "name": "What is the answer?",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

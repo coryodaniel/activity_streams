@@ -1,0 +1,22 @@
+{
+  "type": "Add",
+  "target": {
+    "type": "Collection",
+    "name": "My Cat Pictures"
+  },
+  "summary": "Sally added a picture of her cat to her cat picture collection",
+  "origin": {
+    "type": "Collection",
+    "name": "Camera Roll"
+  },
+  "object": {
+    "url": "http://example.org/img/cat.png",
+    "type": "Image",
+    "name": "A picture of my cat"
+  },
+  "actor": {
+    "type": "Person",
+    "name": "Sally"
+  },
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

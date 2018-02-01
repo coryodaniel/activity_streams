@@ -1,0 +1,8 @@
+{
+  "type": "Link",
+  "name": "An example link",
+  "mediaType": "text/html",
+  "hreflang": "en",
+  "href": "http://example.org/abc",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

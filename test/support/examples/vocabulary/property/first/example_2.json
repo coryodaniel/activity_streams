@@ -1,0 +1,11 @@
+{
+  "type": "Collection",
+  "totalItems": 3,
+  "summary": "Sally's blog posts",
+  "first": {
+    "type": "Link",
+    "summary": "First Page",
+    "href": "http://example.org/collection?page=0"
+  },
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

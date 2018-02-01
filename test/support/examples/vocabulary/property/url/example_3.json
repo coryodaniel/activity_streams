@@ -1,0 +1,17 @@
+{
+  "url": [
+    {
+      "type": "Link",
+      "mediaType": "application/pdf",
+      "href": "http://example.org/4q-sales-forecast.pdf"
+    },
+    {
+      "type": "Link",
+      "mediaType": "text/html",
+      "href": "http://example.org/4q-sales-forecast.html"
+    }
+  ],
+  "type": "Document",
+  "name": "4Q Sales Forecast",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

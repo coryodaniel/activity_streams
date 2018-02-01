@@ -1,0 +1,14 @@
+{
+  "type": "Like",
+  "summary": "Sally liked a note",
+  "object": [
+    "http://example.org/posts/1",
+    {
+      "type": "Note",
+      "summary": "A simple note",
+      "content": "That is a tree."
+    }
+  ],
+  "actor": "http://sally.example.org",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

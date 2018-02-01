@@ -1,0 +1,17 @@
+{
+  "type": "Arrive",
+  "summary": "Sally arrived at work",
+  "origin": {
+    "type": "Place",
+    "name": "Home"
+  },
+  "location": {
+    "type": "Place",
+    "name": "Work"
+  },
+  "actor": {
+    "type": "Person",
+    "name": "Sally"
+  },
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

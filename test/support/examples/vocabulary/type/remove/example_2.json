@@ -1,0 +1,17 @@
+{
+  "type": "Remove",
+  "summary": "The moderator removed Sally from a group",
+  "origin": {
+    "type": "Group",
+    "name": "A Simple Group"
+  },
+  "object": {
+    "type": "Person",
+    "name": "Sally"
+  },
+  "actor": {
+    "type": "http://example.org/Role",
+    "name": "The Moderator"
+  },
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

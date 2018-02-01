@@ -1,0 +1,9 @@
+{
+  "units": "miles",
+  "type": "Place",
+  "radius": 15,
+  "name": "Fresno Area",
+  "longitude": 119.7667,
+  "latitude": 36.75,
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

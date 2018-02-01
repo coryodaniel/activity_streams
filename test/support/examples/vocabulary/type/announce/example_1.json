@@ -1,0 +1,18 @@
+{
+  "type": "Announce",
+  "summary": "Sally announced that she had arrived at work",
+  "object": {
+    "type": "Arrive",
+    "location": {
+      "type": "Place",
+      "name": "Work"
+    },
+    "actor": "http://sally.example.org"
+  },
+  "actor": {
+    "type": "Person",
+    "name": "Sally",
+    "id": "http://sally.example.org"
+  },
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

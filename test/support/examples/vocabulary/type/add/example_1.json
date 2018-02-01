@@ -1,0 +1,10 @@
+{
+  "type": "Add",
+  "summary": "Sally added an object",
+  "object": "http://example.org/abc",
+  "actor": {
+    "type": "Person",
+    "name": "Sally"
+  },
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

@@ -1,0 +1,7 @@
+{
+  "url": "http://example.org/image/2",
+  "type": "Tombstone",
+  "summary": "This image has been deleted",
+  "formerType": "Image",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

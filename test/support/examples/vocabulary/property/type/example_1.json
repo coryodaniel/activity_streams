@@ -1,0 +1,5 @@
+{
+  "type": "http://example.org/Foo",
+  "summary": "A foo",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

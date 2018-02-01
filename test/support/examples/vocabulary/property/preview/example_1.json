@@ -1,0 +1,15 @@
+{
+  "type": "Video",
+  "preview": {
+    "url": {
+      "mediaType": "video/mkv",
+      "href": "http://example.org/trailer.mkv"
+    },
+    "type": "Video",
+    "name": "Trailer",
+    "duration": "PT1M"
+  },
+  "name": "Cool New Movie",
+  "duration": "PT2H30M",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

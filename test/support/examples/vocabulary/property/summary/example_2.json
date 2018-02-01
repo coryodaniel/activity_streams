@@ -1,0 +1,10 @@
+{
+  "type": "Note",
+  "summaryMap": {
+    "zh-Hans": "ä¸æ®µ<em>ç®åç</em>ç¬è®°",
+    "es": "Una <em>nota</em> sencilla",
+    "en": "A simple <em>note</em>"
+  },
+  "name": "Cane Sugar Processing",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

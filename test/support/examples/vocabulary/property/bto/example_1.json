@@ -1,0 +1,11 @@
+{
+  "type": "Offer",
+  "target": "http://john.example.org",
+  "summary": "Sally offered a post to John",
+  "object": "http://example.org/posts/1",
+  "bto": [
+    "http://joe.example.org"
+  ],
+  "actor": "http://sally.example.org",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

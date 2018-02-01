@@ -1,0 +1,6 @@
+{
+  "url": "http://example.org/4q-sales-forecast.pdf",
+  "type": "Document",
+  "name": "4Q Sales Forecast",
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

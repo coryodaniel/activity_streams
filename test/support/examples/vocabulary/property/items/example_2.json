@@ -1,0 +1,16 @@
+{
+  "type": "OrderedCollection",
+  "totalItems": 2,
+  "summary": "Sally's notes",
+  "orderedItems": [
+    {
+      "type": "Note",
+      "name": "Meeting 2016-11-17"
+    },
+    {
+      "type": "Note",
+      "name": "Reminder for Going-Away Party"
+    }
+  ],
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

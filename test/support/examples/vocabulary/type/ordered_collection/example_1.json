@@ -1,0 +1,16 @@
+{
+  "type": "OrderedCollection",
+  "totalItems": 2,
+  "summary": "Sally's notes",
+  "orderedItems": [
+    {
+      "type": "Note",
+      "name": "A Simple Note"
+    },
+    {
+      "type": "Note",
+      "name": "Another Simple Note"
+    }
+  ],
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "View",
+  "summary": "Sally read an article",
+  "object": {
+    "type": "Article",
+    "name": "What You Should Know About Activity Streams"
+  },
+  "actor": {
+    "type": "Person",
+    "name": "Sally"
+  },
+  "@context": "https://www.w3.org/ns/activitystreams"
+}

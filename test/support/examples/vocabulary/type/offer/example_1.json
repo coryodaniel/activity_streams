@@ -1,0 +1,17 @@
+{
+  "type": "Offer",
+  "target": {
+    "type": "Person",
+    "name": "Lewis"
+  },
+  "summary": "Sally offered 50% off to Lewis",
+  "object": {
+    "type": "http://www.types.example/ProductOffer",
+    "name": "50% Off!"
+  },
+  "actor": {
+    "type": "Person",
+    "name": "Sally"
+  },
+  "@context": "https://www.w3.org/ns/activitystreams"
+}
