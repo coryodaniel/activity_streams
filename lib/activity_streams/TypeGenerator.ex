@@ -32,18 +32,33 @@ defmodule ActivityStreams.TypeGenerator do
         :updated,
         :url
       ]
+    },
+    Activity: %{
+      :extends => [
+      Object: []
+    ],
     }
   ]
 
-  defp parent_to_use({name, data}) do
-    except = data[:except]
+  defp parent_to_use({name, opts}) do
+    except = opts[:except] || []
+    only = opts[:only] || []
 
-    parent = @types[name]
-    properties = parent[:properties]
+    properties = @types[name]
 
-    final = Enum.filter(properties, fn elem ->
-      not (Enum.member?(properties, elem) and Enum.member?(except, elem))
-    end)
+    final =
+    cond do
+      only != [] ->
+        Enum.filter(properties, fn elem ->
+          not (Enum.member?(properties, elem) and Enum.member?(except, elem))
+        end)
+      except != []  ->
+        Enum.filter(properties, fn elem ->
+          Enum.member?(properties, elem) and Enum.member?(only, elem)
+        end)
+      true ->
+        properties
+    end
 
     quote do
       @properties unquote(final)
@@ -51,26 +66,26 @@ defmodule ActivityStreams.TypeGenerator do
   end
 
   defmacro __using__(_opts) do
-    deferred = []
-
     for {name, data} <- @types do
       type_name = Atom.to_string(name)
-      module_name = String.to_atom("Type.#{type_name}")
+      module_name = String.to_atom("Elixir.ActivityStreams.Type.#{type_name}")
       if !function_exported?(module_name, :__info__, 1) do
         quote do
           defmodule unquote(module_name) do
             Module.register_attribute(__MODULE__, :properties, accumulate: true)
             @properties unquote(data[:properties])
             unquote(
-            if data[:parents] do
-              for p <- data[:parents], do: parent_to_use(p)
+            if data[:extends] do
+              for p <- data[:extends], do: parent_to_use(p)
             end
             )
-            unquote(IO.puts "Bye")
 
-            def name do
-              IO.puts __MODULE__
-              IO.puts @properties
+            def valid?(struct) do
+              :ok == validate(struct)
+            end
+
+            def validate(struct) do
+              ActivityStreams.Validator.validate(struct, @required)
             end
           end
         end
