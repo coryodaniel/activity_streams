@@ -1,7 +1,6 @@
 defmodule ActivityStreams.TypeGenerator do
   @types [
     Object: %{
-      :extends => [],
       :properties => [
         :attachment,
         :attributed_to,
@@ -33,52 +32,79 @@ defmodule ActivityStreams.TypeGenerator do
         :url
       ]
     },
+    Link: %{
+      :properties => [
+        :href,
+        :rel,
+        :media_type,
+        :name,
+        :hreflang,
+        :height,
+        :width,
+        :preview
+      ]
+    },
     Activity: %{
-      :extends => [
-      Object: []
-    ],
+      :extends => [:Object],
+      :properties => [
+        :actor,
+        :object,
+        :target,
+        :result,
+        :origin,
+        :instrument
+      ]
     }
   ]
 
+  defp parent_to_use(name) when is_atom(name), do: @types[name][:properties]
+
   defp parent_to_use({name, opts}) do
-    except = opts[:except] || []
     only = opts[:only] || []
+    except = opts[:except] || []
 
-    properties = @types[name]
+    properties = @types[name].properties
 
-    final =
     cond do
-      only != [] ->
+      except != [] ->
         Enum.filter(properties, fn elem ->
           not (Enum.member?(properties, elem) and Enum.member?(except, elem))
         end)
-      except != []  ->
+      only != []  ->
         Enum.filter(properties, fn elem ->
           Enum.member?(properties, elem) and Enum.member?(only, elem)
         end)
       true ->
         properties
     end
-
-    quote do
-      @properties unquote(final)
-    end
   end
+
+  defp parent_to_use(thing), do: raise "No clue what #{thing} is"
 
   defmacro __using__(_opts) do
     for {name, data} <- @types do
       type_name = Atom.to_string(name)
       module_name = String.to_atom("Elixir.ActivityStreams.Type.#{type_name}")
+      # Since there's always an info/1 function this conditional will tell us
+      # if a module is already defined.
       if !function_exported?(module_name, :__info__, 1) do
+        inherited_properties =
+        if data[:extends] do
+          for p <- data[:extends] do
+           parent_to_use(p)
+          end
+        else
+          []
+        end
+
+        properties = (data[:properties] || []) ++ inherited_properties
+
         quote do
           defmodule unquote(module_name) do
-            Module.register_attribute(__MODULE__, :properties, accumulate: true)
-            @properties unquote(data[:properties])
-            unquote(
-            if data[:extends] do
-              for p <- data[:extends], do: parent_to_use(p)
-            end
-            )
+            @properties unquote(properties)
+            @required unquote(data[:required])
+
+            def properties, do: @properties
 
             def valid?(struct) do
               :ok == validate(struct)
