@@ -1,6 +1,6 @@
 defmodule ActivityStreams do
   @moduledoc """
-  Documentation for ActivityStreams.
+  ActivityStreams contains the methods for decoding JSON encoded ActivityStreams
   """
 
   @mime "application/activity+json"
@@ -22,12 +22,9 @@ defmodule ActivityStreams do
   #   # Application.get_env(:activity_streams, :validators, %{})
   # end
 
-  def valid?(obj) do
-    false
-  end
-
+  # Decodes the json ActivityStream into its Type's corresponding struct
   def decode(json) do
-    case ActivityStreams.json().decode(json) do
+    case Poison.decode(json) do
       {:ok, doc} -> do_decode(doc)
       error -> error
     end
@@ -50,13 +47,10 @@ defmodule ActivityStreams do
 
   defp do_decode(_), do: {:error, "Top-level must be an object"}
 
+  # Same as decode/1 but will raise an exception
   def decode!(json) do
     {:ok, doc} = decode(json)
     doc
-  end
-
-  def json do
-    Application.get_env(:activity_streams, :json_library)
   end
 
   # Casts a ActiveStreams type name to a module

@@ -2,8 +2,6 @@
 # and its dependencies with the aid of the Mix.Config module.
 use Mix.Config
 
-config :activity_streams, json_library: Poison
-
 # config :activity_streams, :extensions, %{
 #   xsd: {IO, :puts}
 # }
