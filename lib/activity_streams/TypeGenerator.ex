@@ -54,6 +54,11 @@ defmodule ActivityStreams.TypeGenerator do
         :origin,
         :instrument
       ]
+    },
+    IntransitiveActivity: %{
+      :extends => [Activity: %{
+                      :except => [:object]
+                   }],
     }
   ]
 
