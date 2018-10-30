@@ -63,7 +63,10 @@ defmodule ActivityStreams.TypeGenerator do
     only = opts[:only] || []
     except = opts[:except] || []
 
-    properties = @types[name].properties
+    {_, properties} =
+    Enum.map_reduce(@types[name].extends, @types[name].properties, fn x, acc ->
+      {x, acc ++ @types[x].properties}
+    end)
 
     cond do
       except != [] ->
@@ -88,13 +91,14 @@ defmodule ActivityStreams.TypeGenerator do
       # Since there's always an info/1 function this conditional will tell us
       # if a module is already defined.
       if !function_exported?(module_name, :__info__, 1) do
-        inherited_properties =
+        {_, inherited_properties} =
         if data[:extends] do
-          for p <- data[:extends] do
-           parent_to_use(p)
-          end
+          Enum.map_reduce(data[:extends], [], fn x, acc ->
+            parent_properties = parent_to_use(x)
+            {parent_properties, acc ++ parent_properties}
+          end)
         else
-          []
+          {[], []}
         end
 
         properties = (data[:properties] || []) ++ inherited_properties
